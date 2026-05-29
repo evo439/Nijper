@@ -19,10 +19,11 @@
         <div class="container nav-container">
             <a href="#" class="logo"><span class="brand-name-dot highlight"></span></a>
             <ul class="nav-links">
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact" class="btn btn-primary">Get in Touch</a></li>
+                <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+                <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                <li><a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a></li>
+                <li class="lang-switch"><a href="#" class="lang-btn active" data-lang="en">EN</a> | <a href="#" class="lang-btn" data-lang="nl">NL</a></li>
+                <li><a href="#contact" class="btn btn-primary" data-i18n="nav_contact">Get in Touch</a></li>
             </ul>
         </div>
     </nav>
@@ -33,18 +34,18 @@
             <div class="gradient-sphere sphere-2"></div>
         </div>
         <div class="container hero-content">
-            <h1 class="fade-up">Crafting Digital <span class="highlight">Experiences</span></h1>
-            <p class="subtitle fade-up delay-1">We build robust, beautiful websites tailored for cafes, restaurants,
+            <h1 class="fade-up" data-i18n="hero_title">Crafting Digital <span class="highlight">Experiences</span></h1>
+            <p class="subtitle fade-up delay-1" data-i18n="hero_subtitle">We build robust, beautiful websites tailored for cafes, restaurants,
                 small shops, and festivals.</p>
-            <a href="#portfolio" class="btn btn-large btn-glow fade-up delay-2">View Our Work</a>
+            <a href="#portfolio" class="btn btn-large btn-glow fade-up delay-2" data-i18n="hero_btn">View Our Work</a>
         </div>
     </header>
 
     <section id="about" class="about">
         <div class="container">
             <div class="section-header fade-up">
-                <h2>Who We <span class="highlight">Are</span></h2>
-                <p>A passionate duo dedicated to empowering small businesses online.</p>
+                <h2 data-i18n="about_title">Who We <span class="highlight">Are</span></h2>
+                <p data-i18n="about_subtitle">A passionate duo dedicated to empowering small businesses online.</p>
             </div>
 
             <div class="team-grid">
@@ -54,8 +55,8 @@
                     </div>
                     <div class="card-content">
                         <h3>Roel</h3>
-                        <p class="role">Co-founder & Developer</p>
-                        <p>Specializes in crafting scalable backend architectures and seamless user experiences.</p>
+                        <p class="role" data-i18n="role_roel">Co-founder & Developer</p>
+                        <p data-i18n="bio_roel_short">Specializes in crafting scalable backend architectures and seamless user experiences.</p>
                     </div>
                 </div>
 
@@ -65,8 +66,8 @@
                     </div>
                     <div class="card-content">
                         <h3>Sarah</h3>
-                        <p class="role">Co-founder & Designer</p>
-                        <p>Brings visions to life through intuitive design and striking visual aesthetics.<br> press for more info.</p>
+                        <p class="role" data-i18n="role_sarah">Co-founder & Designer</p>
+                        <p data-i18n="bio_sarah_short">Brings visions to life through intuitive design and striking visual aesthetics.</p>
                     </div>
                 </div>
             </div>
@@ -76,48 +77,98 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-header fade-up">
-                <h2>Our <span class="highlight">Expertise</span></h2>
-                <p>We leverage modern technologies to build websites that stand out.</p>
+                <h2 data-i18n="services_title">Our <span class="highlight">Expertise</span></h2>
+                <p data-i18n="services_subtitle">We leverage modern technologies to build websites that stand out.</p>
             </div>
 
             <div class="services-grid">
                 <div class="service-card glass-panel fade-up delay-1">
                     <div class="icon">💻</div>
-                    <h3>Custom Development</h3>
-                    <p>Tailored solutions specifically designed for cafes, shops, and unique festivals.</p>
+                    <h3 data-i18n="srv_custom1_title">Custom Development</h3>
+                    <p data-i18n="srv_custom1_desc">Tailored solutions specifically designed for cafes, shops, and unique festivals.</p>
                 </div>
                 <div class="service-card glass-panel fade-up delay-2">
-                    <div class="icon"><img src="assets/Python-Emblem.png" alt="Django Python Logo" style="height: 72px; width: auto;"></div>
-                    <h3>Django Backend</h3>
-                    <p>We use Python and Django as our robust backend framework, ensuring security, scalability, and
+                    <div class="icon"><img src="assets/Logo_of_Kirby_CMS-white.png" alt="Kirby cms Logo" style="height: 72px; width: auto;"></div>
+                    <h3 data-i18n="srv_custom2_title">Django Backend</h3>
+                    <p data-i18n="srv_custom2_desc">We use Python and Django as our robust backend framework, ensuring security, scalability, and
                         ease of content management.</p>
                 </div>
                 <div class="service-card glass-panel fade-up delay-3">
                     <div class="icon">✨</div>
-                    <h3>Premium Design</h3>
-                    <p>Stunning, modern aesthetics with fluid animations that captivate your audience from the first
+                    <h3 data-i18n="srv_custom3_title">Kirby CMS</h3>
+                    <p data-i18n="srv_custom3_desc">Stunning, modern aesthetics with fluid animations that captivate your audience from the first
                         click.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="Package" class="Package">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 data-i18n="package_title">Onze <span class="highlight"> Pakketten</span></h2>
+                <p data-i18n="package_subtitle">Tijdens het kennismakingsgesprek bepalen we samen welk pakket het beste aansluit bij uw behoeften.</p>
+            </div>
+
+            <div class="package-grid">
+                <div class="package-card glass-panel fade-up delay-1">
+                    <div class="package-img">
+                        <img src="assets/rocket-monitor.png" alt="Essential Design Icon">
+                    </div>
+                    <h3 data-i18n="pkg1_title">Essential Design</h3>
+                    <p class="package-role" data-i18n="pkg1_tag">Snel en efficiënt</p>
+                    <ul style="list-style: none; padding: 0; text-align: left; color: var(--text-muted);">
+                        <li style="margin-bottom: 0.5rem;" data-i18n="pkg1_basis"><strong>Fundament:</strong> Gebruik van beproefde, voorgemaakte designconcepten die zich in de praktijk hebben bewezen.</li>
+                        <li style="margin-bottom: 0.5rem;" data-i18n="pkg1_voordeel"><strong>Voordeel:</strong> Een uiterst snelle lancering gecombineerd met een zeer kosteneffectieve en betrouwbare oplossing.</li>
+                        <li data-i18n="pkg1_resultaat"><strong>Resultaat:</strong> Een professionele, gestroomlijnde website die direct klaar is om klanten te ontvangen.</li>
+                    </ul>
+                </div>
+
+                <div class="package-card glass-panel fade-up delay-2">
+                    <div class="package-img">
+                        <img src="assets/toolbox.png" alt="Custom Solution Icon">
+                    </div>
+                    <h3 data-i18n="pkg2_title">Custom Solution</h3>
+                    <p class="package-role" data-i18n="pkg2_tag">Volledig op maat</p>
+                    <ul style="list-style: none; padding: 0; text-align: left; color: var(--text-muted);">
+                        <li style="margin-bottom: 0.5rem;" data-i18n="pkg2_basis"><strong>Fundament:</strong> Het ontwerp wordt vanaf de grond opgebouwd op basis van jouw unieke wensen.</li>
+                        <li style="margin-bottom: 0.5rem;" data-i18n="pkg2_voordeel"><strong>Voordeel:</strong> Volledige vrijheid in design en functionaliteit; elk detail wordt uitgebreid besproken.</li>
+                        <li data-i18n="pkg2_resultaat"><strong>Resultaat:</strong> Een uniek digitaal product dat naadloos aansluit bij jouw bedrijfsidentiteit.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="section-header fade-up">
-                <h2>Featured <span class="highlight">Work</span></h2>
-                <p>Take a look at what we've built.</p>
+                <h2 data-i18n="port_title">Featured <span class="highlight">Work</span></h2>
+                <p data-i18n="port_subtitle">Take a look at what we've built.</p>
             </div>
 
             <div class="portfolio-grid">
                 <div class="portfolio-card glass-panel fade-up delay-1">
                     <div class="portfolio-content">
-                        <div class="tag">Festival Website</div>
+                        <div class="tag" data-i18n="port_tag_1">Festival Website</div>
                         <h3>Thalia Lustrum Festival</h3>
-                        <p>A vibrant, interactive platform built for the lustrum festival of study association Thalia in
+                        <p data-i18n="port_desc_1">A vibrant, interactive platform built for the lustrum festival of study association Thalia in
                             Nijmegen. Features a dynamic schedule and artist lineup.</p>
                         <a href="https://evo439.github.io/Lustrum-Festival2/" target="_blank" rel="noopener noreferrer"
-                            class="link-arrow">Visit Website <span class="arrow">→</span></a>
+                            class="link-arrow" data-i18n="port_btn">Visit Website <span class="arrow">→</span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-card glass-panel fade-up delay-2">
+                    <div class="portfolio-content">
+                        <div class="tag" data-i18n="port_tag_2">Personal Profile</div>
+                        <h3>Interactive Resume</h3>
+                        <p data-i18n="port_desc_2">A sleek, modern resume website designed to showcase professional experience, skills, and projects in an interactive format.</p>
+                        <a href="https://resume-nine-gules-95.vercel.app" target="_blank" rel="noopener noreferrer"
+                            class="link-arrow" data-i18n="port_btn">Visit Website <span class="arrow">→</span></a>
                     </div>
                 </div>
             </div>
@@ -127,22 +178,22 @@
     <section id="contact" class="contact">
         <div class="container contact-container glass-panel fade-up">
             <div class="contact-info">
-                <h2>Let's build something <span class="highlight">amazing</span></h2>
-                <p>Ready to elevate your business's online presence? Get in touch with us today.</p>
+                <h2 data-i18n="contact_title">Let's build something <span class="highlight">amazing</span></h2>
+                <p data-i18n="contact_subtitle">Ready to elevate your business's online presence? Get in touch with us today.</p>
             </div>
             <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
                 <input type="hidden" name="access_key" value="9a0f52ef-0b63-43bf-ac1f-6d82a42c3c98">
                 <div class="form-group">
-                    <input type="text" name="name" id="name" required placeholder="Your Name">
+                    <input type="text" name="name" id="name" required placeholder="Your Name" data-i18n-ph="contact_ph_name">
                 </div>
                 <div class="form-group">
-                    <input type="email" name="email" id="email" required placeholder="Your Email">
+                    <input type="email" name="email" id="email" required placeholder="Your Email" data-i18n-ph="contact_ph_email">
                 </div>
                 <div class="form-group">
                     <textarea name="message" id="message" rows="4" required
-                        placeholder="Tell us about your project"></textarea>
+                        placeholder="Tell us about your project" data-i18n-ph="contact_ph_msg"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                <button type="submit" class="btn btn-primary btn-full" data-i18n="contact_btn">Send Message</button>
             </form>
         </div>
     </section>
@@ -151,7 +202,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo"><span class="brand-name-dot highlight"></div>
-                <p>&copy; 2026 <span class="brand-name"></span> Web Solutions. All rights reserved.</p>
+                <p data-i18n="footer_text">&copy; 2026 <span class="brand-name"></span> Web Solutions. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -173,6 +224,10 @@
         </div>
     </div>
 
+    <script src="js/locales/en.js"></script>
+    <script src="js/locales/nl.js"></script>
+    <script src="js/components/translations.js"></script>
+    <script src="js/components/language.js"></script>
     <script src="js/components/navbar.js"></script>
     <script src="js/components/animations.js"></script>
     <script src="js/components/scroll.js"></script>

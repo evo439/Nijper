@@ -1,0 +1,46 @@
+/* package Grid */
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.package-card {
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+    cursor: default;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.package-img {
+    margin: 0 auto 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.package-img img {
+    height: 100px;
+    width: auto;
+    transition: var(--transition);
+}
+
+.package-card:hover .package-img img {
+    transform: scale(1.05);
+}
+
+.package-role {
+    color: var(--accent-secondary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

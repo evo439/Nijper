@@ -57,3 +57,24 @@
 .nav-links a:hover {
     color: var(--accent-secondary);
 }
+
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-muted);
+}
+
+.lang-btn {
+    color: var(--text-muted) !important;
+    transition: var(--transition);
+}
+
+.lang-btn.active {
+    color: var(--text-main) !important;
+    font-weight: 800;
+}
+
+.lang-btn:hover {
+    color: var(--text-main) !important;
+}

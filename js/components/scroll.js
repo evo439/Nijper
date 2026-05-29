@@ -19,4 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Rotate hero background on scroll
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        document.documentElement.style.setProperty('--scroll-deg', `${scrolled * 0.15}deg`);
+    });
 });
