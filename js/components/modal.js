@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalRole = document.getElementById('modal-role');
     const modalBio = document.getElementById('modal-bio');
 
+    const isModalOpen = () => modal.classList.contains('show');
+
     // Open modal
     teamCards.forEach(card => {
         card.addEventListener('click', () => {
@@ -25,14 +27,24 @@ document.addEventListener('DOMContentLoaded', () => {
             modalImg.src = imgSrc;
 
             modal.classList.add('show');
-            document.body.classList.toggle('no-scroll');
+            document.body.classList.add('no-scroll');
+
+            // Push a history state for the modal
+            history.pushState({ modalOpen: true }, '');
         });
     });
 
     // Close modal function
     const closeModal = () => {
+        if (!isModalOpen()) return;
+
         modal.classList.remove('show');
         document.body.classList.remove('no-scroll');
+
+        // If closed via UI (not back button), remove the modal state from history
+        if (history.state && history.state.modalOpen) {
+            history.back();
+        }
     };
 
     // Close on X click
@@ -51,6 +63,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             closeModal();
+        }
+    });
+
+    // Close on mobile back button
+    window.addEventListener('popstate', () => {
+        if (isModalOpen()) {
+            modal.classList.remove('show');
+            document.body.classList.remove('no-scroll');
         }
     });
 
